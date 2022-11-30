@@ -14,6 +14,7 @@ header{
 .HeaderNav{
     display: flex;
     justify-content: space-evenly;
+    margin-right: 10rem;
 }
 .HeaderUl{
     display: flex;
@@ -25,12 +26,15 @@ header{
     font-weight: 700;
     list-style: none;
     margin-left: 3rem;
-    font-size: 0.9em;
+    font-size: 0.8em;
 }
 .ListItem
 {
     list-style: none;
     margin-left: 3rem;
-    font-size: 0.9em;
+    font-size: 0.8em;
 
+}
+.LogoHeader{
+    width: 5vw;
 }
