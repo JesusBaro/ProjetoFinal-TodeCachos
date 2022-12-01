@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;700&family=Playfair+Display+SC:wght@400;700;900&display=swap');
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Playfair Display SC', serif; */
+/* Header */
+
+
 *{
     margin: 0;
     padding: 0;
@@ -5,36 +11,206 @@
 }
 header{
     width: 100%;
-    height: 9vh;
-    border: solid red;
+    height: 8vh;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
+}
+.MenuMobile{
+    display:none;
+}
+.DivMenuMobile{
+    display: none;
+}
+.LogoHeader{
+    width: 5vw;
+    margin-left: 3rem;
 }
 .HeaderNav{
     display: flex;
-    justify-content: space-evenly;
-    margin-right: 10rem;
+ 
 }
 .HeaderUl{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-.ListItemBold
-{
-    font-weight: 700;
+.ListItemBold{
     list-style: none;
-    margin-left: 3rem;
-    font-size: 0.8em;
+    /* margin-left: 3rem; */
+    font-size: 1em;
+    color: #9767A9;
+    margin-left: 8rem;
+    font-family: 'Montserrat', sans-serif;   
+     font-weight: 900;
 }
-.ListItem
-{
+.ListItem{
     list-style: none;
-    margin-left: 3rem;
-    font-size: 0.8em;
+    margin-left: 1.4rem;
+    font-size: 1em;
+    color: #9767A9;
+    font-family: 'Montserrat', sans-serif;}
+.HeaderDiv{
+    justify-content: space-evenly;
+}
+#Pesquisa{
+    border: solid #9767A9;
+    width: 10vw;
+    height: 4vh;
+    border-radius: 23vw;
+    /* background: url("svg/logo-input.svg") no-repeat left 0.3em; */
+    background-image: url("svg/logo-input.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    background-size: 1.2em;
+    padding-left:1.3rem;
+    color: #AC95BB;
+    font-family: 'Montserrat', sans-serif;
+}
+::placeholder{
+    color: #AC95BB;
+    font-family: 'Montserrat', sans-serif;
+}
+.LogoNavegation{
+    width: 3vw;
+    padding-left: 0.5rem;
+}
+
+
+/* Tittle */
+
+
+#Tittle{
+width: 100%;
+height: 80vh;
+background-image: url("galeria/cabeludo.png");
+background-size: contain;
+/* background-position: right ; */
+background-repeat: no-repeat;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+}
+.divTittleOne{ 
+width: 20vw;
+height: 20vh;
+position: relative;
+top: 3rem;
+right: 4.3rem;
+}
+.divTittleTwo{  
+width: 25vw;
+height: 15vh;
+position: relative;
+top: 3rem;
+left: 8vh;
+}
+#TittleH2{
+color: white;
+font-size: 3em;
+
 
 }
-.LogoHeader{
-    width: 5vw;
+#TittleParagraph{
+color: white;
+font-size: 1.7em;
+font-family: 'Montserrat', sans-serif;
+
 }
+
+
+
+@media (min-width:201px) and (max-width:500px) {
+    header{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    } 
+    .LogoHeader{
+    width: 25vw;
+    position: relative;
+    justify-content: center;
+    right: 1.5rem;
+    }
+    .HeaderNav{
+    display: none;
+    }
+    .HeaderUl{
+     display: none;
+       
+    }
+    #Pesquisa{
+    display: none;
+       
+    }
+    .LogoNavegation{
+    display: none;
+       
+    }
+    .DivMenuMobile{
+    display: flex;
+   justify-content: start;
+    }
+    .MenuMobile{
+    display: flex;
+    justify-content: start;
+}
+    /* .MenuMobile:hover{
+    display: flex;
+    transition: initial;
+    width: 40vw;
+    height: 90vh;
+    background-color: #9767A9;
+    }
+    .DivMenuMobile:hover{
+        display: flex;
+        position: relative;
+        top: 5.5rem;
+        } */
+body{
+    flex-direction: column;
+}        
+#Tittle{
+    /* border: solid fuchsia; */
+    width: 100%;
+    height: 50vh;
+    background-image: url("galeria/cabeludoMobile.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    display: flex;
+    }
+    .divTittleOne{ 
+    width: 50vw;
+    height: 15vh;
+    position: absolute;
+    top: 6rem;
+    left: 2rem;
+    }
+    #TittleH2{
+    color: white;
+    padding-bottom: 1.3rem;
+    font-size: 2.7em;
+    font-family: 'Playfair Display SC', serif;
+    }
+    .divTittleTwo{  
+    width: 65vw;
+    height: 10vh;
+    position: absolute;
+    top: 15rem;
+    left: 2rem;
+    }       
+     #TittleParagraph{
+    color: white;
+    font-size: 1.3em;
+    font-family: 'Montserrat', sans-serif;   
+
+    }
+
+
+
+}
+
+
