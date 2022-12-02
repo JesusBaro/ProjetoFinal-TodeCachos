@@ -321,7 +321,7 @@ font-family: 'Montserrat', sans-serif;
 .BackgroundCard{
 border: solid rgb(255, 0, 0);
 width: 100%;
-height: 90vh;
+height: 500vh;
 flex-direction: column;
 justify-content: center;
 }
@@ -347,8 +347,9 @@ border: solid rgb(177, 168, 4);
 background-color:rgba(234, 241, 31, 0.599);
 width: 80%;
 height: 30vh;
-
+margin-left: 2rem;
 margin-top: 0.9rem;
+justify-content: center;
 }
 .ParagraphCardRight{
 background-color:rgb(177, 168, 4);
