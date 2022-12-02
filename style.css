@@ -10,7 +10,6 @@ p{
     font-family: 'Montserrat', sans-serif;
     color: white;
 }
-
 /* Header */
 *{
 margin: 0;
@@ -71,11 +70,13 @@ height: 4vh;
 border-radius: 23vw;
 /* background: url("svg/logo-input.svg") no-repeat left 0.3em; */
 background-image: url("svg/logo-input.svg");
+
 background-repeat: no-repeat;
 background-size: cover;
-background-position: left;
+background-position-x: 0.3rem;
+background-position-y: 0.3rem;
 background-size: 1.2em;
-padding-left:1.3rem;
+padding-left:1.4rem;
 color: #AC95BB;
 font-family: 'Montserrat', sans-serif;
 }
