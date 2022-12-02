@@ -4,13 +4,14 @@ font-family: 'Playfair Display SC', serif; */
 /* Header */
 h2{
 color: white;
-margin-bottom: 1.5rem;
+/* margin-bottom: 1.5rem; */
 font-family: 'Playfair Display SC', serif;
 }
 p{
 font-family: 'Montserrat', sans-serif;
 color: white;
 }
+
 
 *{
 margin: 0;
@@ -21,6 +22,9 @@ header{
 width: 100%;
 height: 8vh;
 display: flex;
+position: fixed;
+z-index: 1;
+background-color: white;
 justify-content: space-around;
 align-items: center;
 }
@@ -50,7 +54,7 @@ font-size: 1em;
 color: #9767A9;
 margin-left: 8rem;
 font-family: 'Montserrat', sans-serif;   
-    font-weight: 900;
+font-weight: 900;
 }
 .ListItem{
 list-style: none;
@@ -133,37 +137,37 @@ display: flex;
 justify-content:space-evenly;
 }
 .LayoutH2{
-border: solid green;
+/* border: solid 3px rgb(6, 225, 6); */
+margin-top: 2rem;
 width: 50vw;
-height: 25vh;
-padding: 1rem 1rem 0 0;
-margin: 1.5rem 0 0 3rem;
+height: 30vh;
 font-size: 2rem;
-text-align: left;
+/* position: relative;
+top: 1.7rem; */
 }
 .LayoutParagraph{
-border: solid green;
+/* border: solid 3px rgb(6, 225, 6); */
+margin-top: 4rem;
 width: 40vw;
 height:35vh;
 font-size: 1.2rem;
 padding-right: 1rem;
 font-family: 'Montserrat', sans-serif;
-position: relative;
-top: 1.6rem;
+
 }
-#BackgroundCardLeft{
+.BackgroundCardLeft{
 width: 100%;
 height: 500vh;
-display: flex;
+/* display: flex; */
+justify-content: space-evenly;
 }
 .PhotoCardLeft{
 border: solid green;
 background-color: rgba(127, 255, 212, 0.445);
-width:50vw;
+width:45vw;
 height: 60vh; 
 margin-left: 2rem ;
-position: relative;
-top: -5rem;
+margin-top: -10rem;
 z-index: 2;
 }
 .ParagraphCardLeft{
@@ -171,7 +175,7 @@ border: solid orange;
 background-color: #9767A9;
 width: 30vw;
 height: 65vh; 
-margin-left: 6rem ;
+margin-left: 4rem ;
 position: relative;
 top: 20rem;
 z-index: 1;
@@ -179,27 +183,26 @@ text-align: left;
 padding: 2rem 2rem 0 2rem;
 }
 .PhotoCardRight{
-    border: solid rgb(17, 0, 128);
-    background-color: rgba(127, 140, 255, 0.445);
-    width:50vw;
-    height: 60vh; 
-    margin-left: 1.5rem ;
-    position: relative;
-    top: 10rem;
-    z-index: 2;  
+border: solid rgb(17, 0, 128);
+background-color: rgba(127, 140, 255, 0.445);
+width:45vw;
+height: 60vh; 
+margin-left:45rem;
+margin-top: -10rem;
+z-index: 2;  
 }
 .ParagraphCardRight{
-    border: solid rgb(0, 255, 17);
-    background-color: #fe5151c2;
-    width: 30vw;
-    height: 65vh; 
-    margin-left: 6rem ;
-    position: relative;
-    top: 20rem;
-    z-index: 1;
-    text-align: left;
-    padding: 2rem 2rem 0 2rem;
-    }
+border: solid rgb(0, 255, 17);
+background-color: #fe5151c2;
+width: 30vw;
+height: 65vh; 
+margin-left: 5rem ;
+position: relative;
+top: 20rem;
+z-index: 1;
+text-align: left;
+padding: 2rem 2rem 0 2rem;
+}
 
 
 
@@ -222,12 +225,12 @@ right: 1.5rem;
 display: none;
 }
 .HeaderUl{
-    display: none;
-    
+display: none;
+
 }
 #Pesquisa{
 display: none;
-    
+
 }
 .LogoNavegation{
 display: none;
@@ -249,10 +252,10 @@ height: 90vh;
 background-color: #9767A9;
 }
 .DivMenuMobile:hover{
-    display: flex;
-    position: relative;
-    top: 5.5rem;
-    } */
+display: flex;
+position: relative;
+top: 5.5rem;
+} */
 body{
 flex-direction: column;
 }        
@@ -286,7 +289,7 @@ position: absolute;
 top: 15rem;
 left: 2rem;
 }       
-    #TittleParagraph{
+#TittleParagraph{
 color: white;
 font-size: 1.3em;
 font-family: 'Montserrat', sans-serif;   
@@ -294,7 +297,7 @@ font-family: 'Montserrat', sans-serif;
 }
 }
 /* ---media Mobile-- */
-@media (min-width:301px) and (max-width:500px) {
+@media (min-width:201px) and (max-width:500px) {
 header{
 width: 100%;
 height: 8vh;
@@ -311,16 +314,16 @@ right: 1.5rem;
 display: none;
 }
 .HeaderUl{
-    display: none;
-    
+display: none;
+
 }
 #Pesquisa{
 display: none;
-    
+
 }
 .LogoNavegation{
 display: none;
-    
+
 }
 .DivMenuMobile{
 display: flex;
@@ -339,10 +342,10 @@ height: 90vh;
 background-color: #9767A9;
 }
 .DivMenuMobile:hover{
-    display: flex;
-    position: relative;
-    top: 5.5rem;
-    } */
+display: flex;
+position: relative;
+top: 5.5rem;
+} */
 body{
 flex-direction: column;
 }        
@@ -365,7 +368,6 @@ left: 2rem;
 }
 #TittleH2{
 color: white;
-padding-bottom: 1.3rem;
 font-size: 2.7em;
 font-family: 'Playfair Display SC', serif;
 }
@@ -381,6 +383,89 @@ color: white;
 font-size: 1.3em;
 font-family: 'Montserrat', sans-serif;   
 }
+/* Layout Roxo */
+#LayoutPurple{
+background-color: #9767A9;
+width: 100%;
+height: 55vh;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.LayoutH2{
+/* border: solid 3px rgb(6, 61, 225); */
+width: 90%;
+height: 10vh;
+font-size: 0.7rem;
+text-align: justify;
+margin-top: 0;
+
+}
+.SeparacaoMobile{
+padding-bottom: 2rem;
+}
+.LayoutParagraph{
+/* border: solid 3px rgb(10, 6, 225); */
+width: 90%;
+height: 40vh;
+font-size: 0.8rem;
+margin-top: 0rem;
+font-family: 'Montserrat', sans-serif;
+}
+ /*CARDS */
+
+ .BackgroundCardLeft{
+    border: solid orange;
+width: 100%;
+height: 500vh;
+display: flex;
+flex-direction: column;
+/* justify-content: space-evenly; */
+}
+.PhotoCardLeft{
+border: solid green;
+background-color: rgba(127, 255, 212, 0.445);
+width:45vw;
+height: 60vh; 
+margin-left: 2rem ;
+position: relative;
+top: -5rem;
+z-index: 2;
+}
+.ParagraphCardLeft{
+border: solid orange;
+background-color: #9767A9;
+width: 30vw;
+height: 65vh; 
+margin-left: 4rem ;
+position: relative;
+top: 20rem;
+z-index: 1;
+text-align: left;
+padding: 2rem 2rem 0 2rem;
+}
+/* .PhotoCardRight{
+border: solid rgb(17, 0, 128);
+background-color: rgba(127, 140, 255, 0.445);
+width:45vw;
+height: 60vh; 
+margin-left: 1.5rem ;
+position: relative;
+top: 6rem;
+z-index: 2;  
+}
+.ParagraphCardRight{
+border: solid rgb(0, 255, 17);
+background-color: #fe5151c2;
+width: 30vw;
+height: 65vh; 
+margin-left: 5rem ;
+position: relative;
+top: 20rem;
+z-index: 1;
+text-align: left;
+padding: 2rem 2rem 0 2rem;
+} */
 
 
 
