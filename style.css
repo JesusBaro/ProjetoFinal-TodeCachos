@@ -1,18 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;700&family=Playfair+Display+SC:wght@400;700;900&display=swap');
 /* font-family: 'Montserrat', sans-serif;
 font-family: 'Playfair Display SC', serif; */
-/* Header */
 h2{
-color: white;
-/* margin-bottom: 1.5rem; */
-font-family: 'Playfair Display SC', serif;
+    color: white;
+    margin-bottom: 1.5rem;
+    font-family: 'Playfair Display SC', serif;
 }
 p{
-font-family: 'Montserrat', sans-serif;
-color: white;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
 }
 
-
+/* Header */
 *{
 margin: 0;
 padding: 0;
@@ -23,7 +22,7 @@ width: 100%;
 height: 8vh;
 display: flex;
 position: fixed;
-z-index: 1;
+z-index: 3;
 background-color: white;
 justify-content: space-around;
 align-items: center;
@@ -138,7 +137,7 @@ justify-content:space-evenly;
 }
 .LayoutH2{
 /* border: solid 3px rgb(6, 225, 6); */
-margin-top: 2rem;
+margin-top: 3rem;
 width: 50vw;
 height: 30vh;
 font-size: 2rem;
@@ -151,151 +150,58 @@ margin-top: 4rem;
 width: 40vw;
 height:35vh;
 font-size: 1.2rem;
-padding-right: 1rem;
+padding-right: 2rem;
 font-family: 'Montserrat', sans-serif;
-
 }
-.BackgroundCardLeft{
+.BackgroundCard{
 width: 100%;
-height: 500vh;
-/* display: flex; */
-justify-content: space-evenly;
+height: 160vh;
 }
 .PhotoCardLeft{
 border: solid green;
-background-color: rgba(127, 255, 212, 0.445);
-width:45vw;
+background-color:rgba(0, 128, 0, 0.599);
+width:48vw;
 height: 60vh; 
 margin-left: 2rem ;
-margin-top: -10rem;
+margin-top: -6rem;
 z-index: 2;
 }
 .ParagraphCardLeft{
-border: solid orange;
-background-color: #9767A9;
-width: 30vw;
-height: 65vh; 
-margin-left: 4rem ;
-position: relative;
-top: 20rem;
+border: solid green;
+background-color: green;
+width: 35vw;
+height: 60vh; 
+margin-left: 7rem ;
+margin-top: -3rem;
 z-index: 1;
 text-align: left;
 padding: 2rem 2rem 0 2rem;
+flex-wrap: wrap;
+font-size: 1em;
 }
 .PhotoCardRight{
 border: solid rgb(17, 0, 128);
-background-color: rgba(127, 140, 255, 0.445);
+background-color:  rgba(17, 0, 128, 0.657);
 width:45vw;
-height: 60vh; 
-margin-left:45rem;
-margin-top: -10rem;
+height: 70vh; 
+margin-left:43rem;
+margin-top: -30rem;
 z-index: 2;  
 }
 .ParagraphCardRight{
-border: solid rgb(0, 255, 17);
-background-color: #fe5151c2;
+border: solid  rgb(17, 0, 128);
+background-color: rgb(17, 0, 128);
 width: 30vw;
-height: 65vh; 
-margin-left: 5rem ;
-position: relative;
-top: 20rem;
+height: 60vh; 
+margin-left:49rem;
+margin-top: -6rem;
 z-index: 1;
 text-align: left;
 padding: 2rem 2rem 0 2rem;
+flex-wrap: wrap;
+font-size: 1em;
 }
 
-
-
-
-/* ---media Telas Pequenas-- */
-@media (min-width:101px) and (max-width:300px) {
-header{
-width: 100%;
-height: 8vh;
-display: flex;
-align-items: center;
-} 
-.LogoHeader{
-width: 5vw;
-position: relative;
-justify-content: center;
-right: 1.5rem;
-}
-.HeaderNav{
-display: none;
-}
-.HeaderUl{
-display: none;
-
-}
-#Pesquisa{
-display: none;
-
-}
-.LogoNavegation{
-display: none;
-
-}
-.DivMenuMobile{
-display: flex;
-justify-content: start;
-}
-.MenuMobile{
-display: flex;
-justify-content: start;
-}
-/* .MenuMobile:hover{
-display: flex;
-transition: initial;
-width: 40vw;
-height: 90vh;
-background-color: #9767A9;
-}
-.DivMenuMobile:hover{
-display: flex;
-position: relative;
-top: 5.5rem;
-} */
-body{
-flex-direction: column;
-}        
-#Tittle{
-/* border: solid fuchsia; */
-width: 100%;
-height: 50vh;
-background-image: url("galeria/cabeludoMobile.png");
-background-size: cover;
-background-repeat: no-repeat;
-flex-direction: column;
-display: flex;
-}
-.divTittleOne{ 
-width: 50vw;
-height: 15vh;
-position: absolute;
-top: 6rem;
-left: 2rem;
-}
-#TittleH2{
-color: white;
-padding-bottom: 1.3rem;
-font-size: 2.7em;
-font-family: 'Playfair Display SC', serif;
-}
-.divTittleTwo{  
-width: 65vw;
-height: 10vh;
-position: absolute;
-top: 15rem;
-left: 2rem;
-}       
-#TittleParagraph{
-color: white;
-font-size: 1.3em;
-font-family: 'Montserrat', sans-serif;   
-
-}
-}
 /* ---media Mobile-- */
 @media (min-width:201px) and (max-width:500px) {
 header{
@@ -303,6 +209,7 @@ width: 100%;
 height: 8vh;
 display: flex;
 align-items: center;
+z-index: 3;
 } 
 .LogoHeader{
 width: 20vw;
@@ -346,9 +253,7 @@ display: flex;
 position: relative;
 top: 5.5rem;
 } */
-body{
-flex-direction: column;
-}        
+       
 #Tittle{
 /* border: solid fuchsia; */
 width: 100%;
@@ -387,7 +292,7 @@ font-family: 'Montserrat', sans-serif;
 #LayoutPurple{
 background-color: #9767A9;
 width: 100%;
-height: 55vh;
+height: 65vh;
 flex-direction: column;
 align-items: center;
 justify-content: center;
@@ -396,79 +301,63 @@ justify-content: center;
 /* border: solid 3px rgb(6, 61, 225); */
 width: 90%;
 height: 10vh;
-font-size: 0.7rem;
-text-align: justify;
-margin-top: 0;
-
+font-size: 0.9rem;
+text-align: left;
 }
+
 .SeparacaoMobile{
-padding-bottom: 2rem;
+padding-bottom: 1rem;
 }
 .LayoutParagraph{
 /* border: solid 3px rgb(10, 6, 225); */
 width: 90%;
 height: 40vh;
 font-size: 0.8rem;
-margin-top: 0rem;
+margin-top: 2rem;
 font-family: 'Montserrat', sans-serif;
 }
- /*CARDS */
+/*CARDS */
 
- .BackgroundCardLeft{
-    border: solid orange;
+.BackgroundCard{
+border: solid rgb(255, 0, 0);
 width: 100%;
-height: 500vh;
-display: flex;
+height: 90vh;
 flex-direction: column;
-/* justify-content: space-evenly; */
+justify-content: center;
 }
 .PhotoCardLeft{
 border: solid green;
-background-color: rgba(127, 255, 212, 0.445);
-width:45vw;
-height: 60vh; 
-margin-left: 2rem ;
-position: relative;
-top: -5rem;
-z-index: 2;
+background-color:rgba(0, 128, 0, 0.599);
+width: 80%;
+height: 30vh;
+margin-top: 0.9rem;
 }
 .ParagraphCardLeft{
-border: solid orange;
-background-color: #9767A9;
-width: 30vw;
-height: 65vh; 
-margin-left: 4rem ;
-position: relative;
-top: 20rem;
-z-index: 1;
-text-align: left;
-padding: 2rem 2rem 0 2rem;
+ border: solid green;
+background-color:green;
+width:100%;
+height: 56vh;
+margin-top: 0;
+margin-left: 0;
+font-size:0.8em ;
 }
-/* .PhotoCardRight{
-border: solid rgb(17, 0, 128);
-background-color: rgba(127, 140, 255, 0.445);
-width:45vw;
-height: 60vh; 
-margin-left: 1.5rem ;
-position: relative;
-top: 6rem;
-z-index: 2;  
+/* nao editados */
+.PhotoCardRight{
+border: solid rgb(177, 168, 4);
+background-color:rgba(234, 241, 31, 0.599);
+width: 80%;
+height: 30vh;
+
+margin-top: 0.9rem;
 }
 .ParagraphCardRight{
-border: solid rgb(0, 255, 17);
-background-color: #fe5151c2;
-width: 30vw;
-height: 65vh; 
-margin-left: 5rem ;
-position: relative;
-top: 20rem;
-z-index: 1;
-text-align: left;
-padding: 2rem 2rem 0 2rem;
-} */
-
-
-
+background-color:rgb(177, 168, 4);
+width:100%;
+height: 56vh;
+margin-top: 0;
+margin-left: 0;
+font-size:0.8em ;
+}
 }
 
 
