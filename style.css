@@ -68,9 +68,7 @@ border: solid #9767A9;
 width: 10vw;
 height: 4vh;
 border-radius: 23vw;
-/* background: url("svg/logo-input.svg") no-repeat left 0.3em; */
 background-image: url("svg/logo-input.svg");
-
 background-repeat: no-repeat;
 background-size: cover;
 background-position-x: 0.3rem;
@@ -160,6 +158,7 @@ height: 160vh;
 }
 .PhotoCardLeft{
 border: solid green;
+background-image: url("galeria/");
 background-color:rgba(0, 128, 0, 0.599);
 width:48vw;
 height: 60vh; 
@@ -305,7 +304,6 @@ height: 10vh;
 font-size: 0.9rem;
 text-align: left;
 }
-
 .SeparacaoMobile{
 padding-bottom: 1rem;
 }
@@ -317,8 +315,9 @@ font-size: 0.8rem;
 margin-top: 2rem;
 font-family: 'Montserrat', sans-serif;
 }
-/*CARDS */
-
+/* -- -------------------- -- */
+          /*CARDS */
+/* -- -------------------- -- */
 .BackgroundCard{
 border: solid rgb(255, 0, 0);
 width: 100%;
@@ -342,7 +341,6 @@ margin-top: 0;
 margin-left: 0;
 font-size:0.8em ;
 }
-/* nao editados */
 .PhotoCardRight{
 border: solid rgb(177, 168, 4);
 background-color:rgba(234, 241, 31, 0.599);
