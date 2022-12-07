@@ -1,7 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&family=Playfair+Display:wght@400;700;900&display=swap');
-/* font-family: 'Montserrat', sans-serif;
-font-family: 'Playfair Display', serif; */
-
 /* Header */
 *{
 margin: 0;
@@ -81,7 +78,7 @@ padding-left: 0.5rem;
 #Tittle{
 width: 100%;
 height: 70vh;
-background-image: url("galeria/cabeludo.png");
+background-image: url("img/cabeludo.png");
 background-size: cover;
 /* background-position: right ; */
 background-repeat: no-repeat;
@@ -145,7 +142,7 @@ font-family: 'Montserrat', sans-serif;
 /* CARDS */
 .BackgroundCard{
 width: 100%;
-height: 615vh;
+height: 490vh;
 justify-content: space-evenly;
 
 }
@@ -158,7 +155,7 @@ font-family: 'Playfair Display', serif;
 }
 .CardParagraph{
 color: white;
-font-size: 0.9em;
+font-size: 1em;
 margin-bottom: 1rem;
 padding: 0rem 2rem 0 2rem;
 font-family: 'Montserrat', sans-serif;
@@ -166,7 +163,7 @@ font-family: 'Montserrat', sans-serif;
 /* SEC Card 1*/
 /* PAR 1 criancas */
 .PhotoCardLeftCriancas{
-background-image: url("galeria/cabelo-espelho.png");
+background-image: url("img/cabelo-espelho.png");
 background-size: cover;
 background-repeat: no-repeat;
 width:45vw;
@@ -178,7 +175,7 @@ z-index: 2;
 .ParagraphCardLeftCriancas{
 background-color:#9767A9;
 width: 35vw;
-height: 45vh; 
+height: 55vh; 
 margin-left: 6rem ;
 margin-top: -6rem;
 z-index: 1;
@@ -190,7 +187,7 @@ color: white;
 }
 /* PAR 2 majur */
 .PhotoCardRightMajur{
-background-image: url("galeria/Majur-Coutinho.png");
+background-image: url("img/Majur-Coutinho.png");
 background-size: cover;
 background-repeat: no-repeat;
 width:45vw;
@@ -202,7 +199,7 @@ z-index: 2;
 .ParagraphCardRightMajur{
 background-color:#9767A9;
 width: 35vw;
-height: 43vh; 
+height: 50vh; 
 margin-left:44rem;
 margin-top: -6rem;
 z-index: 1;
@@ -212,7 +209,7 @@ color: white;
 /* SEC Card 2*/
 /* PAR 1 cachos */
 .PhotoCardLeftCachos{
-background-image: url("galeria/Modelo-cachos.png");
+background-image: url("img/Modelo-cachos.png");
 background-size: cover;
 background-repeat: no-repeat;
 width:45vw;
@@ -235,7 +232,7 @@ color: white;
 }
 /* PAR 2  rainha*/
 .PhotoCardRightRainha{
-background-image: url("galeria/Rainha-Afro.png");
+background-image: url("img/Rainha-Afro.png");
 background-size: cover;
 background-repeat: no-repeat;
 width:45vw;
@@ -258,7 +255,7 @@ color: white;
 /* SEC Card 3*/
 /* PAR 1 mae e filha */
 .PhotoCardLeftFamilia{
-background-image: url("galeria/Mae-e-Filha.png");
+background-image: url("img/Mae-e-Filha.png");
 background-size: cover;
 background-repeat: no-repeat;
 width:45vw;
@@ -270,7 +267,7 @@ z-index: 2;
 .ParagraphCardLeftFamilia{
 background-color:#9767A9;
 width: 35vw;
-height: 40vh; 
+height: 45vh; 
 margin-top: -2rem;
 margin-left: 6rem ;
 z-index: 1;
@@ -281,7 +278,7 @@ color: white;
 }
 /* PAR 2  banho*/
 .PhotoCardRightBanho{
-background-image: url("galeria/Espuma-no-cabelo.png");
+background-image: url("img/Espuma-no-cabelo.png");
 background-size: cover;
 background-repeat: no-repeat;
 width:45vw;
@@ -293,7 +290,7 @@ z-index: 2;
 .ParagraphCardRightBanho{
 background-color:#9767A9;
 width: 35vw;
-height: 35vh; 
+height:40vh; 
 margin-left:44rem;
 margin-top: -6rem;
 z-index: 1;
@@ -304,7 +301,7 @@ color: white;
 /* SEC Card 4 apenas left*/
 /* PAR 1 */
 .PhotoCardLeftCabeloBranco{
-background-image: url("galeria/Modelo-cabelo-branco.png");
+background-image: url("img/Modelo-cabelo-branco.png");
 background-size: cover;
 background-repeat: no-repeat;
 width:45vw;
@@ -316,7 +313,7 @@ z-index: 2;
 .ParagraphCardLeftCabeloBranco{
 background-color:#9767A9;
 width: 35vw;
-height: 35vh; 
+height: 45vh; 
 margin-left: 6rem ;
 margin-top: -3rem;
 z-index: 1;
@@ -327,117 +324,118 @@ color: white;
 }  
 .PhotoCardRightArquivoSvg{
 
-    background-image: url("svg/Cachos-preto.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    width:30vw;
-    height: 70vh; 
-    margin-left:45rem;
-    margin-top: -31rem;
-    z-index: 2;  
-    }  
+background-image: url("svg/Cachos-preto.svg");
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+width:30vw;
+height: 70vh; 
+margin-left:45rem;
+margin-top: -31rem;
+z-index: 2;  
+}  
 /* -Grid GALERIA-------------------------------- */
 #ContainerGalery{
-    display: grid;
-    grid-template-columns: 0.3fr 0.2fr 0.2fr 0.3fr 0.2fr;
-    grid-template-rows: 30vh 30vh 30vh;
-    grid-template-areas:
-    "rei Beyonce Grace Volume NagoHair"
-    "rei Pantera Grace Volume Retinto"
-    "GloriaM ThaisA SnoopyD Volume Retinto";
-justify-content: center;
+display: grid;
+grid-template-columns: 0.3fr 0.2fr 0.2fr 0.3fr 0.2fr;
+grid-template-rows: 30vh 30vh 30vh;
+grid-template-areas:
+"rei Beyonce Grace Volume NagoHair"
+"rei Pantera Grace Volume Retinto"
+"GloriaM ThaisA SnoopyD Volume Retinto";
+/* justify-content: center; */
 column-gap: 1.5vh;
 row-gap: 1.5vh;
+margin-left:3rem ;
+margin-right: 3rem;
 }
 .rei{
-  
-    grid-area: "rei";
-    grid-column-start: 1;
-    grid-row-end: span 2;
-    background-image: url("img/Rei-Afro.png");
-    background-size:45vh;
-    background-position: center;
-    background-repeat: no-repeat;
+
+grid-area: "rei";
+grid-column-start: 1;
+grid-row-end: span 2;
+background-image: url("img/Rei-Afro.png");
+background-size:45vh;
+background-position: center;
+background-repeat: no-repeat;
 }
 .Beyonce{
-    grid-area: "Beyonce";
-    grid-column-start: 2;
+grid-area: "Beyonce";
+grid-column-start: 2;
 grid-template-rows: 1;
 background-image: url("img/Beyonce.png");
 background-size:cover;
 background-repeat: no-repeat;
 }
 .Grace{
-    grid-area: "Grace";
-    grid-column-start: 3;
-    grid-row-end: span 2;
-    grid-template-rows: 1;
-    background-image: url("img/grace-jones.png");
-    background-size:cover;
-    background-repeat: no-repeat;
+grid-area: "Grace";
+grid-column-start: 3;
+grid-row-end: span 2;
+grid-template-rows: 1;
+background-image: url("img/grace-jones.png");
+background-size:cover;
+background-repeat: no-repeat;
 }
 .Volume{
-    grid-area: "Volume";
-    grid-column-start: 4;
-    grid-template-rows: 1;
-    grid-row-end: span 3;
-    background-image: url("img/Modelo-cabelo-volumoso.png");
-    background-size:cover;
-    background-repeat: no-repeat;
+grid-area: "Volume";
+grid-column-start: 4;
+grid-template-rows: 1;
+grid-row-end: span 3;
+background-image: url("img/Modelo-cabelo-volumoso.png");
+background-size:cover;
+background-repeat: no-repeat;
 }
 .NagoHair{
-    grid-area: "NagoHair";
-    grid-column-start: 5;
-    grid-row: 1;
-    grid-column: 5;
-    background-image: url("img/modelo-nago.png");
-    background-size:cover;
-    background-repeat: no-repeat;
+grid-area: "NagoHair";
+grid-column-start: 5;
+grid-row: 1;
+background-image: url("img/modelo-nago.png");
+background-size:cover;
+background-repeat: no-repeat;
 
 }
 .Pantera {
-    grid-area: "Pantera";
-    grid-column-start: 2;
-    grid-template-rows: 2;
-    background-image: url("img/Pantera-Negra.png");
-    background-size:cover;
-    background-repeat: no-repeat;
+grid-area: "Pantera";
+grid-column-start: 2;
+grid-template-rows: 2;
+background-image: url("img/Pantera-Negra.png");
+background-size:cover;
+background-repeat: no-repeat;
 }
 .Retinto {
-    grid-area: "Retinto";
-    grid-column-start: 5;
-    grid-row-start: 2;
-    grid-row-end: span 3;
-    background-image: url("img/Modelo-retinto.png");
-    background-size:cover;
-    background-repeat: no-repeat;
-
+grid-area: "Retinto";
+grid-column: 5;
+grid-row-start: 2;
+grid-row-end:span  3;
+background-image: url("img/Modelo-retinto.png");
+background-size:cover;
+background-repeat: no-repeat;
+background-position-y: -1.5rem;
 }
 .GloriaM {
-    grid-area: "GloriaM";
-    grid-column-start: 1;
-    grid-template-rows: 3;
-    background-image: url("img/gloriamaria.png");
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position-x: -1.3rem;
+grid-area: "GloriaM";
+grid-column-start: 1;
+grid-template-rows: 3;
+background-image: url("img/gloriamaria.png");
+background-size:50vh;
+background-repeat: no-repeat;
+background-position-x: -1.3rem;
 }
 .ThaisA {
-    grid-area: "ThaisA";
-    grid-column-start: 2;
-    grid-template-rows: 3;
-    background-image: url("img/Thais-Araujo.png");
-    background-size:cover;
-    background-repeat: no-repeat;
+grid-area: "ThaisA";
+grid-column-start: 2;
+grid-template-rows: 3;
+background-image: url("img/Thais-Araujo.png");
+background-size:cover;
+background-repeat: no-repeat;
 }
 .SnoopyD{
-    grid-area: "SnoopyD";
-    grid-column-start: 3;
-    grid-template-rows: 3;
-    background-image: url("img/cabelo-snoopydog.png");
-    background-size:cover;
-    background-repeat: no-repeat;
+grid-area: "SnoopyD";
+grid-column-start: 3;
+grid-template-rows: 3;
+background-image: url("img/cabelo-snoopydog.png");
+background-size:cover;
+background-repeat: no-repeat;
 }
 
 
@@ -497,10 +495,9 @@ top: 5.5rem;
 } */
 
 #Tittle{
-/* border: solid fuchsia; */
 width: 100%;
-height: 80vh;
-background-image: url("galeria/cabeludoMobile.png");
+height: 60vh;
+background-image: url("img//cabeludoMobile.png");
 background-size: cover;
 background-repeat: no-repeat;
 flex-direction: column;
@@ -556,209 +553,209 @@ margin-top: 5rem;
 font-family: 'Montserrat', sans-serif;
 }
 /* -- -------------------- -- */
-    /*CARDS */
+/*CARDS */
 /* -- -------------------- -- */
 main{
-    flex-direction: column; 
-    align-items: center;
+flex-direction: column; 
+align-items: center;
 }
 .BackgroundCard{
 width: 100%;
 height: 500vh;
 }
 .CardH2{
-    color: white;
-    padding: 1rem 2rem 1rem 2rem;
-    font-weight: 700;
-    font-size: 1.7em;
-    font-family: 'Playfair Display', serif;
-    }
-    .CardParagraph{
-    color: white;
-    font-size: 0.9em;
-    margin-bottom: 1rem;
-    padding: 0rem 2rem 0 2rem;
-    font-family: 'Montserrat', sans-serif;
-    }
-    /* SEC Card 1*/
-    /* PAR 1 criancas */
-    .PhotoCardLeftCriancas{
-    background-image: url("galeria/cabelo-espelho.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 2;
-    width:90%;
-    height: 30vh;
-    margin-top: 0rem;
-    margin-left: 1.3rem;
-    }
-    .ParagraphCardLeftCriancas{
-    background-color:#9767A9;
-    width: 100%;
-    height: 50vh; 
-    margin-left: 0rem ;
-    margin-top: 0rem;
-    z-index: 1;
-    text-align: left;
-    flex-wrap: wrap;
-    
-    color: white;
-    
-    }
-    /* PAR 2 majur */
-    .PhotoCardRightMajur{
+color: white;
+padding: 1rem 2rem 1rem 2rem;
+font-weight: 700;
+font-size: 1.7em;
+font-family: 'Playfair Display', serif;
+}
+.CardParagraph{
+color: white;
+font-size: 0.9em;
+margin-bottom: 1rem;
+padding: 0rem 2rem 0 2rem;
+font-family: 'Montserrat', sans-serif;
+}
+/* SEC Card 1*/
+/* PAR 1 criancas */
+.PhotoCardLeftCriancas{
+background-image: url("galeria/cabelo-espelho.png");
+background-size: cover;
+background-repeat: no-repeat;
+z-index: 2;
+width:90%;
+height: 30vh;
+margin-top: 0rem;
+margin-left: 1.3rem;
+}
+.ParagraphCardLeftCriancas{
+background-color:#9767A9;
+width: 100%;
+height: 50vh; 
+margin-left: 0rem ;
+margin-top: 0rem;
+z-index: 1;
+text-align: left;
+flex-wrap: wrap;
 
-    background-image: url("galeria/Majur-Coutinho.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 2;  
-    width:90%;
-    height: 30vh;
-    margin-top: 0rem;
-    margin-left: 1.3rem;
-    }
-    .ParagraphCardRightMajur{
- 
-    background-color:#9767A9;
-    width: 100%;
-    height: 47vh; 
-    margin-left: 0rem ;
-    margin-top: 0rem;
-    z-index: 1;
-    text-align: left;
-    color: white;
-    }
-    /* SEC Card 2*/
-    /* PAR 1 cachos */
-    .PhotoCardLeftCachos{
-    
-    background-image: url("galeria/Modelo-cachos.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    width:90%;
-    height: 30vh;
-    margin-top: 0rem;
-    margin-left: 1.3rem;
-    z-index: 2;
-    }
-    .ParagraphCardLeftCachos{
-    background-color:#9767A9;
-    width: 100%;
-    height: 43vh; 
-    margin-left: 0rem ;
-    margin-top: 0rem;
-    z-index: 1;
-    text-align: left;
-    flex-wrap: wrap;
-    color: white;
-    
-    }
-    /* PAR 2  rainha*/
-    .PhotoCardRightRainha{
-    background-image: url("galeria/Rainha-Afro.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    width:90%;
-    height: 30vh;
-    margin-top: 0rem;
-    margin-left: 1.3rem;
-    z-index: 2;  
-    }
-    .ParagraphCardRightRainha{
-    background-color:#9767A9;
-    width: 100%;
-    height: 43vh; 
-    margin-left: 0rem ;
-    margin-top: 0rem;
-    z-index: 1;
-    text-align: left;
-    flex-wrap: wrap;
-    color: white;
-    }
-    /* SEC Card 3*/
-    /* PAR 1 mae e filha */
-    .PhotoCardLeftFamilia{
-    background-image: url("galeria/Mae-e-Filha.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    width:90%;
-    height: 30vh;
-    margin-top: 0rem;
-    margin-left: 1.3rem;
-    z-index: 2;
-    }
-    .ParagraphCardLeftFamilia{
-    background-color:#9767A9;
-    width: 100%;
-    height: 43vh; 
-    margin-left: 0rem ;
-    margin-top: 0rem;
-    z-index: 1;
-    text-align: left;
-    flex-wrap: wrap;
-    color: white;
-    
-    }
-    /* PAR 2  banho*/
-    .PhotoCardRightBanho{
-    background-image: url("galeria/Espuma-no-cabelo.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    width:90%;
-    height: 30vh;
-    margin-top: 0rem;
-    margin-left: 1.3rem;
-    z-index: 2;  
-    }
-    .ParagraphCardRightBanho{
-        display: none;
-    background-color:#9767A9;
-    width: 100%;
-    height: 43vh; 
-    margin-left: 0rem ;
-    margin-top: 0rem;
-    z-index: 1;
-    text-align: left;
-    flex-wrap: wrap;
-    color: white;
-    }
-    /* SEC Card 4 apenas left*/
-    /* PAR 1 */
-    .PhotoCardLeftCabeloBranco{
-        display: none;
-    background-image: url("galeria/Modelo-cabelo-branco.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    width:90%;
-    height: 30vh;
-    margin-top: 0rem;
-    margin-left: 1.3rem;
-    z-index: 2;
-    }
-    .ParagraphCardLeftCabeloBranco{
-    background-color:#9767A9;
-    width: 100%;
-    height: 35vh; 
-    margin-left: 0rem ;
-    margin-top: 0rem;
-    z-index: 1;
-    text-align: left;
-    flex-wrap: wrap;
-    color: white;
-    
-    }  
-    .PhotoCardRightArquivoSvg{
-        
-    background-image: url("svg/Cachos-preto.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    width:90%;
-    height: 30vh;
-    margin-top: 0rem;
-    margin-left: 1.3rem;
-    z-index: 2;  
-        }  
+color: white;
+
+}
+/* PAR 2 majur */
+.PhotoCardRightMajur{
+
+background-image: url("galeria/Majur-Coutinho.png");
+background-size: cover;
+background-repeat: no-repeat;
+z-index: 2;  
+width:90%;
+height: 30vh;
+margin-top: 0rem;
+margin-left: 1.3rem;
+}
+.ParagraphCardRightMajur{
+
+background-color:#9767A9;
+width: 100%;
+height: 47vh; 
+margin-left: 0rem ;
+margin-top: 0rem;
+z-index: 1;
+text-align: left;
+color: white;
+}
+/* SEC Card 2*/
+/* PAR 1 cachos */
+.PhotoCardLeftCachos{
+
+background-image: url("galeria/Modelo-cachos.png");
+background-size: cover;
+background-repeat: no-repeat;
+width:90%;
+height: 30vh;
+margin-top: 0rem;
+margin-left: 1.3rem;
+z-index: 2;
+}
+.ParagraphCardLeftCachos{
+background-color:#9767A9;
+width: 100%;
+height: 43vh; 
+margin-left: 0rem ;
+margin-top: 0rem;
+z-index: 1;
+text-align: left;
+flex-wrap: wrap;
+color: white;
+
+}
+/* PAR 2  rainha*/
+.PhotoCardRightRainha{
+background-image: url("galeria/Rainha-Afro.png");
+background-size: cover;
+background-repeat: no-repeat;
+width:90%;
+height: 30vh;
+margin-top: 0rem;
+margin-left: 1.3rem;
+z-index: 2;  
+}
+.ParagraphCardRightRainha{
+background-color:#9767A9;
+width: 100%;
+height: 43vh; 
+margin-left: 0rem ;
+margin-top: 0rem;
+z-index: 1;
+text-align: left;
+flex-wrap: wrap;
+color: white;
+}
+/* SEC Card 3*/
+/* PAR 1 mae e filha */
+.PhotoCardLeftFamilia{
+background-image: url("galeria/Mae-e-Filha.png");
+background-size: cover;
+background-repeat: no-repeat;
+width:90%;
+height: 30vh;
+margin-top: 0rem;
+margin-left: 1.3rem;
+z-index: 2;
+}
+.ParagraphCardLeftFamilia{
+background-color:#9767A9;
+width: 100%;
+height: 43vh; 
+margin-left: 0rem ;
+margin-top: 0rem;
+z-index: 1;
+text-align: left;
+flex-wrap: wrap;
+color: white;
+
+}
+/* PAR 2  banho*/
+.PhotoCardRightBanho{
+background-image: url("galeria/Espuma-no-cabelo.png");
+background-size: cover;
+background-repeat: no-repeat;
+width:90%;
+height: 30vh;
+margin-top: 0rem;
+margin-left: 1.3rem;
+z-index: 2;  
+}
+.ParagraphCardRightBanho{
+display: none;
+background-color:#9767A9;
+width: 100%;
+height: 43vh; 
+margin-left: 0rem ;
+margin-top: 0rem;
+z-index: 1;
+text-align: left;
+flex-wrap: wrap;
+color: white;
+}
+/* SEC Card 4 apenas left*/
+/* PAR 1 */
+.PhotoCardLeftCabeloBranco{
+display: none;
+background-image: url("galeria/Modelo-cabelo-branco.png");
+background-size: cover;
+background-repeat: no-repeat;
+width:90%;
+height: 30vh;
+margin-top: 0rem;
+margin-left: 1.3rem;
+z-index: 2;
+}
+.ParagraphCardLeftCabeloBranco{
+background-color:#9767A9;
+width: 100%;
+height: 35vh; 
+margin-left: 0rem ;
+margin-top: 0rem;
+z-index: 1;
+text-align: left;
+flex-wrap: wrap;
+color: white;
+
+}  
+.PhotoCardRightArquivoSvg{
+
+background-image: url("svg/Cachos-preto.svg");
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+width:90%;
+height: 30vh;
+margin-top: 0rem;
+margin-left: 1.3rem;
+z-index: 2;  
+}  
 }
 
 
