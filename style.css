@@ -337,6 +337,113 @@ color: white;
     margin-top: -31rem;
     z-index: 2;  
     }  
+/* -Grid GALERIA-------------------------------- */
+#ContainerGalery{
+    display: grid;
+    grid-template-columns: 0.3fr 0.2fr 0.2fr 0.3fr 0.2fr;
+    grid-template-rows: 30vh 30vh 30vh;
+    grid-template-areas:
+    "rei Beyonce Grace Volume NagoHair"
+    "rei Pantera Grace Volume Retinto"
+    "GloriaM ThaisA SnoopyD Volume Retinto";
+justify-content: center;
+column-gap: 1.5vh;
+row-gap: 1.5vh;
+}
+.rei{
+  
+    grid-area: "rei";
+    grid-column-start: 1;
+    grid-row-end: span 2;
+    background-image: url("img/Rei-Afro.png");
+    background-size:45vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Beyonce{
+    grid-area: "Beyonce";
+    grid-column-start: 2;
+grid-template-rows: 1;
+background-image: url("img/Beyonce.png");
+background-size:cover;
+background-repeat: no-repeat;
+}
+.Grace{
+    grid-area: "Grace";
+    grid-column-start: 3;
+    grid-row-end: span 2;
+    grid-template-rows: 1;
+    background-image: url("img/grace-jones.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.Volume{
+    grid-area: "Volume";
+    grid-column-start: 4;
+    grid-template-rows: 1;
+    grid-row-end: span 3;
+    background-image: url("img/Modelo-cabelo-volumoso.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.NagoHair{
+    grid-area: "NagoHair";
+    grid-column-start: 5;
+    grid-row: 1;
+    grid-column: 5;
+    background-image: url("img/modelo-nago.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+
+}
+.Pantera {
+    grid-area: "Pantera";
+    grid-column-start: 2;
+    grid-template-rows: 2;
+    background-image: url("img/Pantera-Negra.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.Retinto {
+    grid-area: "Retinto";
+    grid-column-start: 5;
+    grid-row-start: 2;
+    grid-row-end: span 3;
+    background-image: url("img/Modelo-retinto.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+
+}
+.GloriaM {
+    grid-area: "GloriaM";
+    grid-column-start: 1;
+    grid-template-rows: 3;
+    background-image: url("img/gloriamaria.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-x: -1.3rem;
+}
+.ThaisA {
+    grid-area: "ThaisA";
+    grid-column-start: 2;
+    grid-template-rows: 3;
+    background-image: url("img/Thais-Araujo.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.SnoopyD{
+    grid-area: "SnoopyD";
+    grid-column-start: 3;
+    grid-template-rows: 3;
+    background-image: url("img/cabelo-snoopydog.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
 /* ---media Mobile-- */
 @media (min-width:201px) and (max-width:500px) {
 header{
