@@ -313,7 +313,7 @@ z-index: 2;
 .ParagraphCardLeftCabeloBranco{
 background-color:#9767A9;
 width: 35vw;
-height: 45vh; 
+height: 40vh; 
 margin-left: 6rem ;
 margin-top: -3rem;
 z-index: 1;
@@ -334,18 +334,22 @@ margin-left:45rem;
 margin-top: -31rem;
 z-index: 2;  
 }  
+/* ---------------------------------------------- */
 /* -Grid GALERIA-------------------------------- */
+/* ---------------------------------------------- */
+#MobileContainerGalery{
+display: none;
+}
 #ContainerGalery{
+height: 103vh;
 display: grid;
 grid-template-columns: 0.3fr 0.2fr 0.2fr 0.3fr 0.2fr;
-grid-template-rows: 30vh 30vh 30vh;
+grid-template-rows: 25vh 25vh 25vh;
 grid-template-areas:
 "rei Beyonce Grace Volume NagoHair"
 "rei Pantera Grace Volume Retinto"
 "GloriaM ThaisA SnoopyD Volume Retinto";
-/* justify-content: center; */
-column-gap: 1.5vh;
-row-gap: 1.5vh;
+grid-gap: 2vh;
 margin-left:3rem ;
 margin-right: 3rem;
 }
@@ -355,9 +359,10 @@ grid-area: "rei";
 grid-column-start: 1;
 grid-row-end: span 2;
 background-image: url("img/Rei-Afro.png");
-background-size:45vh;
-background-position: center;
+background-size:cover;
+/* background-position: ; */
 background-repeat: no-repeat;
+background-position: center;
 }
 .Beyonce{
 grid-area: "Beyonce";
@@ -366,6 +371,7 @@ grid-template-rows: 1;
 background-image: url("img/Beyonce.png");
 background-size:cover;
 background-repeat: no-repeat;
+background-position: center;
 }
 .Grace{
 grid-area: "Grace";
@@ -375,6 +381,7 @@ grid-template-rows: 1;
 background-image: url("img/grace-jones.png");
 background-size:cover;
 background-repeat: no-repeat;
+background-position: center;
 }
 .Volume{
 grid-area: "Volume";
@@ -384,6 +391,7 @@ grid-row-end: span 3;
 background-image: url("img/Modelo-cabelo-volumoso.png");
 background-size:cover;
 background-repeat: no-repeat;
+background-position: center;
 }
 .NagoHair{
 grid-area: "NagoHair";
@@ -392,6 +400,7 @@ grid-row: 1;
 background-image: url("img/modelo-nago.png");
 background-size:cover;
 background-repeat: no-repeat;
+background-position: center;
 
 }
 .Pantera {
@@ -401,16 +410,16 @@ grid-template-rows: 2;
 background-image: url("img/Pantera-Negra.png");
 background-size:cover;
 background-repeat: no-repeat;
+background-position: center;
 }
 .Retinto {
 grid-area: "Retinto";
-grid-column: 5;
-grid-row-start: 2;
-grid-row-end:span  3;
+grid-column-start: 5;
+grid-row-end:span  2;
 background-image: url("img/Modelo-retinto.png");
-background-size:cover;
+background-size:cover ;
 background-repeat: no-repeat;
-background-position-y: -1rem;
+background-position: center;
 }
 .GloriaM {
 grid-area: "GloriaM";
@@ -419,7 +428,8 @@ grid-template-rows: 3;
 background-image: url("img/gloriamaria.png");
 background-size:50vh;
 background-repeat: no-repeat;
-background-position-x: -1.3rem;
+background-position: center;
+
 }
 .ThaisA {
 grid-area: "ThaisA";
@@ -428,6 +438,7 @@ grid-template-rows: 3;
 background-image: url("img/Thais-Araujo.png");
 background-size:cover;
 background-repeat: no-repeat;
+background-position: center;
 }
 .SnoopyD{
 grid-area: "SnoopyD";
@@ -436,13 +447,20 @@ grid-template-rows: 3;
 background-image: url("img/cabelo-snoopydog.png");
 background-size:cover;
 background-repeat: no-repeat;
+background-position: center;
+}
+footer{
+border: solid #9767A9;
+background-color: #9767A9;
+height: 10vh;
 }
 
 
 
-
-
+/* ---------------------------------------------- */
 /* ---media Mobile-- */
+/* ---------------------------------------------- */
+
 @media (min-width:201px) and (max-width:500px) {
 header{
 width: 100%;
@@ -497,7 +515,7 @@ top: 5.5rem;
 #Tittle{
 width: 100%;
 height: 60vh;
-background-image: url("img//cabeludoMobile.png");
+background-image: url("img/cabeludoMobile.png");
 background-size: cover;
 background-repeat: no-repeat;
 flex-direction: column;
@@ -552,8 +570,9 @@ font-size: 1rem;
 margin-top: 5rem;
 font-family: 'Montserrat', sans-serif;
 }
+
 /* -- -------------------- -- */
-/*CARDS */
+/*CARDS MOBILE */
 /* -- -------------------- -- */
 main{
 flex-direction: column; 
@@ -561,7 +580,7 @@ align-items: center;
 }
 .BackgroundCard{
 width: 100%;
-height: 500vh;
+height: 550vh;
 }
 .CardH2{
 color: white;
@@ -580,7 +599,7 @@ font-family: 'Montserrat', sans-serif;
 /* SEC Card 1*/
 /* PAR 1 criancas */
 .PhotoCardLeftCriancas{
-background-image: url("galeria/cabelo-espelho.png");
+background-image: url("img/cabelo-espelho.png");
 background-size: cover;
 background-repeat: no-repeat;
 z-index: 2;
@@ -605,7 +624,7 @@ color: white;
 /* PAR 2 majur */
 .PhotoCardRightMajur{
 
-background-image: url("galeria/Majur-Coutinho.png");
+background-image: url("img/Majur-Coutinho.png");
 background-size: cover;
 background-repeat: no-repeat;
 z-index: 2;  
@@ -629,7 +648,7 @@ color: white;
 /* PAR 1 cachos */
 .PhotoCardLeftCachos{
 
-background-image: url("galeria/Modelo-cachos.png");
+background-image: url("img/Modelo-cachos.png");
 background-size: cover;
 background-repeat: no-repeat;
 width:90%;
@@ -652,7 +671,7 @@ color: white;
 }
 /* PAR 2  rainha*/
 .PhotoCardRightRainha{
-background-image: url("galeria/Rainha-Afro.png");
+background-image: url("img/Rainha-Afro.png");
 background-size: cover;
 background-repeat: no-repeat;
 width:90%;
@@ -675,7 +694,7 @@ color: white;
 /* SEC Card 3*/
 /* PAR 1 mae e filha */
 .PhotoCardLeftFamilia{
-background-image: url("galeria/Mae-e-Filha.png");
+background-image: url("img/Mae-e-Filha.png");
 background-size: cover;
 background-repeat: no-repeat;
 width:90%;
@@ -698,7 +717,7 @@ color: white;
 }
 /* PAR 2  banho*/
 .PhotoCardRightBanho{
-background-image: url("galeria/Espuma-no-cabelo.png");
+background-image: url("img/Espuma-no-cabelo.png");
 background-size: cover;
 background-repeat: no-repeat;
 width:90%;
@@ -708,7 +727,7 @@ margin-left: 1.3rem;
 z-index: 2;  
 }
 .ParagraphCardRightBanho{
-display: none;
+
 background-color:#9767A9;
 width: 100%;
 height: 43vh; 
@@ -722,8 +741,8 @@ color: white;
 /* SEC Card 4 apenas left*/
 /* PAR 1 */
 .PhotoCardLeftCabeloBranco{
-display: none;
-background-image: url("galeria/Modelo-cabelo-branco.png");
+
+background-image: url("img/Modelo-cabelo-branco.png");
 background-size: cover;
 background-repeat: no-repeat;
 width:90%;
@@ -756,6 +775,99 @@ margin-top: 0rem;
 margin-left: 1.3rem;
 z-index: 2;  
 }  
+/* -- -------------------- -- */
+/*Grade Galeria*/
+/* -- -------------------- -- */
+
+#ContainerGalery{
+display: none;
+}
+/* MOBILE GALERY */
+#MobileContainerGalery{
+
+display: grid;
+grid-template-columns: 4fr 4fr 4fr 4fr;
+grid-template-rows: 30vw  50vw 50vw 50vw 30vw;
+grid-template-areas: 
+"MobRei MobRei MobBeyonce MobPantera"
+"MobRei MobRei MobThaisA MobThaisA"
+"MobGloriaM MobGloriaM MobGloriaM MobGloriaM"
+"MobVolume MobRetinto MobGrace MobGrace"
+"MobNagoHair MobSnoopyD MobGrace MobGrace";
+grid-gap: 1vh;
+
+}
+.MobRei{
+grid-area:MobRei ;
+background-image: url("img/Rei-Afro.png");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+.MobBeyonce{
+grid-area:MobBeyonce ;
+background-image: url("img/Beyonce.png");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+.MobGrace{
+grid-area:MobGrace ;
+background-image: url("img/grace-jones.png");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+.MobVolume{
+grid-area:MobVolume ;
+background-image: url("img/Modelo-cabelo-volumoso.png");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+.MobNagoHair{
+grid-area: MobNagoHair;
+background-image: url("img/modelo-nago.png");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+.MobPantera{
+grid-area: MobPantera;
+background-image: url("img/Pantera-Negra.png");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+.MobRetinto{
+grid-area: MobRetinto;
+background-image: url("img/Modelo-retinto.png");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+.MobGloriaM{
+grid-area: MobGloriaM;
+background-image: url("img/gloriamaria.png");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+.MobThaisA{
+grid-area: MobThaisA;
+background-image: url("img/Thais-Araujo.png");
+background-size: cover;
+background-repeat: no-repeat;  
+background-position: center;
+}
+.MobSnoopyD{
+grid-area: MobSnoopyD;
+background-image: url("img/cabelo-snoopydog.png");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+
 }
 
 
