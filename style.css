@@ -36,6 +36,8 @@ align-items: center;
 }
 .HeaderListItem{
 list-style: none;
+text-decoration: none;
+
 margin-left: 1.4rem;
 font-size: 1em;
 color: #9767A9;
@@ -49,6 +51,10 @@ color: #9767A9;
 font-weight: 700;
 font-family: 'Montserrat', sans-serif;
 }
+.HeaderLink{
+    text-decoration: none;
+
+    }
 .HeaderDiv{
 justify-content: space-evenly;
 }
@@ -451,7 +457,6 @@ background-repeat: no-repeat;
 background-position: center;
 }
 footer{
-border: solid #9767A9;
 background-color: #9767A9;
 height: 10vh;
 display: flex;
@@ -459,23 +464,24 @@ align-items: center;
 justify-content: flex-end;
 
 }
+
+/* ---------------------------- */
+    /*  div com os botões desativada */
 .FooterSection{
     display: flex;
     align-items: center;
     justify-content: flex-end;
     display: none;  
 }
-.FooterNavegation{
-border: solid forestgreen;
+/* ---------------------------- */
+
+
+.FooterUl{
 display: flex;
-justify-content: center;
+justify-content: space-around;
 align-items: center;
-
-/* width: 9vw; */
 height: 7vh;
-/* padding-right: 5rem; */
-
-
+margin-right: 3rem;
 }
 .FooterLink:hover{
 background-color: rgba(255, 255, 255, 0.585);
@@ -488,19 +494,21 @@ flex-wrap: wrap;
 display: flex;
 justify-content: center;
 align-items: center;
+
 }
 .FooterLinkList{
 list-style: none;
+margin-left: 0.2rem;
 }
 .Buttom{
-width: 2vw;
+width: 1vw;
 text-align: center;
 }
 .ButtomText{
 margin-left: 0.1rem;
 color: white;
 font-family: 'Montserrat', sans-serif;
-font-size: 0.8em;
+font-size: 0.6em;
 width: 4vw;
 }
 
@@ -847,7 +855,8 @@ grid-template-areas:
 "MobVolume MobRetinto MobGrace MobGrace"
 "MobNagoHair MobSnoopyD MobGrace MobGrace";
 grid-gap: 1vh;
-
+margin-left: 0.5rem;
+margin-right: 0.5rem;
 }
 .MobRei{
 grid-area:MobRei ;
@@ -919,6 +928,10 @@ background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
 }
+footer{
+background-color: white;
+}
+
 
 }
 
