@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&family=Playfair+Display:wght@400;700;900&display=swap');
-/* Header */
 *{
 margin: 0;
 padding: 0;
@@ -52,9 +51,9 @@ font-weight: 700;
 font-family: 'Montserrat', sans-serif;
 }
 .HeaderLink{
-    text-decoration: none;
+text-decoration: none;
 
-    }
+}
 .HeaderDiv{
 justify-content: space-evenly;
 }
@@ -344,10 +343,10 @@ z-index: 2;
 /* ---------------------------------------------- */
 /* -Grid GALERIA-------------------------------- */
 /* ---------------------------------------------- */
-#MobileContainerGalery{
+#MobileGridGalery{
 display: none;
 }
-#ContainerGalery{
+#GridGalery{
 height: 103vh;
 display: grid;
 grid-template-columns: 0.3fr 0.2fr 0.2fr 0.3fr 0.2fr;
@@ -462,26 +461,20 @@ height: 10vh;
 display: flex;
 align-items: center;
 justify-content: flex-end;
+}
+.MobileFooterNav{
+/* display: none; */
+}
+.FooterNav{
+border: solid orange;
+margin-right: 1.6rem;
 
 }
-
-/* ---------------------------- */
-    /*  div com os botões desativada */
-.FooterSection{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    display: none;  
-}
-/* ---------------------------- */
-
-
 .FooterUl{
 display: flex;
 justify-content: space-around;
 align-items: center;
 height: 7vh;
-margin-right: 3rem;
 }
 .FooterLink:hover{
 background-color: rgba(255, 255, 255, 0.585);
@@ -501,7 +494,7 @@ list-style: none;
 margin-left: 0.2rem;
 }
 .Buttom{
-width: 1vw;
+width: 0.8vw;
 text-align: center;
 }
 .ButtomText{
@@ -509,31 +502,27 @@ margin-left: 0.1rem;
 color: white;
 font-family: 'Montserrat', sans-serif;
 font-size: 0.6em;
-width: 4vw;
+width: 3.7vw;
 }
-
-/* .svgTeste{
-    ma
-} */
-
 
 /* ---------------------------------------------- */
 /* ---media Mobile-- */
 /* ---------------------------------------------- */
 
-@media (min-width:350px) and (max-width:500px) {
+@media (min-width:201px) and (max-width:500px) {
 header{
 width: 100%;
-height: 8vh;
+height: 7vh;
 display: flex;
+
 align-items: center;
 z-index: 3;
 } 
 .LogoHeader{
 width: 20vw;
-position: relative;
+margin-left: 0vw;
 justify-content: center;
-right: 1.5rem;
+
 }
 .HeaderNav{
 display: none;
@@ -646,7 +635,7 @@ height: 550vh;
 color: white;
 padding: 1rem 2rem 1rem 2rem;
 font-weight: 700;
-font-size: 1.7em;
+font-size: 1.3em;
 font-family: 'Playfair Display', serif;
 }
 .CardParagraph{
@@ -671,7 +660,7 @@ margin-left: 1.3rem;
 .ParagraphCardLeftCriancas{
 background-color:#9767A9;
 width: 100%;
-height: 50vh; 
+height: 54vh; 
 margin-left: 0rem ;
 margin-top: 0rem;
 z-index: 1;
@@ -720,7 +709,7 @@ z-index: 2;
 .ParagraphCardLeftCachos{
 background-color:#9767A9;
 width: 100%;
-height: 43vh; 
+height: 45vh; 
 margin-left: 0rem ;
 margin-top: 0rem;
 z-index: 1;
@@ -839,11 +828,11 @@ z-index: 2;
 /*Grade Galeria*/
 /* -- -------------------- -- */
 
-#ContainerGalery{
+#GridGalery{
 display: none;
 }
 /* MOBILE GALERY */
-#MobileContainerGalery{
+#MobileGridGalery{
 
 display: grid;
 grid-template-columns: 4fr 4fr 4fr 4fr;
@@ -928,11 +917,54 @@ background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
 }
+.FooterNav{
+display: none;
+}
 footer{
-background-color: white;
+background-color: gray;
+}
+.MobileFooterNav{
+border:solid fuchsia;
+margin-right: 2rem;
+width: 30vh;
 }
 
+.MobileFooterUl{
+border:solid blue;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+width: 100%;
+}
+/* .MobileFooterLink:hover{
+background-color: rgba(255, 255, 255, 0.585);
 
+} */
+.FooterLinkList{
+list-style: none;
+margin-left: 0.2rem;
+
+}
+.MobileFooterLink{
+text-decoration: none;
+text-align: center;
+flex-wrap: wrap;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.MobileButtom{
+width: 0.8vw;
+text-align: center;
+}
+.MobileButtomText{
+margin-left: 0.1rem;
+color: white;
+font-family: 'Montserrat', sans-serif;
+font-size: 0.6em;
+width: 3.7vw;
+}
 }
 
 
