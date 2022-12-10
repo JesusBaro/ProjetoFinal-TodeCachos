@@ -347,7 +347,7 @@ z-index: 2;
 display: none;
 }
 #GridGalery{
-height: 103vh;
+height: 90vh;
 display: grid;
 grid-template-columns: 0.3fr 0.2fr 0.2fr 0.3fr 0.2fr;
 grid-template-rows: 25vh 25vh 25vh;
@@ -463,12 +463,10 @@ align-items: center;
 justify-content: flex-end;
 }
 .MobileFooterNav{
-/* display: none; */
+display: none;
 }
 .FooterNav{
-border: solid orange;
-margin-right: 1.6rem;
-
+margin-right: 4rem;
 }
 .FooterUl{
 display: flex;
@@ -494,7 +492,7 @@ list-style: none;
 margin-left: 0.2rem;
 }
 .Buttom{
-width: 0.8vw;
+width: 2vw;
 text-align: center;
 }
 .ButtomText{
@@ -548,18 +546,6 @@ display: flex;
 justify-content: start;
 width: 10vw;
 }
-/* .MenuMobile:hover{
-display: flex;
-transition: initial;
-width: 40vw;
-height: 90vh;
-background-color: #9767A9;
-}
-.DivMenuMobile:hover{
-display: flex;
-position: relative;
-top: 5.5rem;
-} */
 
 #Tittle{
 width: 100%;
@@ -603,7 +589,6 @@ align-items: center;
 justify-content: center;
 }
 .LayoutH2{
-/* border: solid 3px rgb(6, 61, 225); */
 margin-bottom: 4rem;
 width: 90%;
 height: 10vh;
@@ -619,7 +604,6 @@ font-size: 1rem;
 margin-top: 5rem;
 font-family: 'Montserrat', sans-serif;
 }
-
 /* -- -------------------- -- */
 /*CARDS MOBILE */
 /* -- -------------------- -- */
@@ -645,8 +629,7 @@ margin-bottom: 1rem;
 padding: 0rem 2rem 0 2rem;
 font-family: 'Montserrat', sans-serif;
 }
-/* SEC Card 1*/
-/* PAR 1 criancas */
+
 .PhotoCardLeftCriancas{
 background-image: url("img/cabelo-espelho.png");
 background-size: cover;
@@ -666,13 +649,9 @@ margin-top: 0rem;
 z-index: 1;
 text-align: left;
 flex-wrap: wrap;
-
 color: white;
-
 }
-/* PAR 2 majur */
 .PhotoCardRightMajur{
-
 background-image: url("img/Majur-Coutinho.png");
 background-size: cover;
 background-repeat: no-repeat;
@@ -683,7 +662,6 @@ margin-top: 0rem;
 margin-left: 1.3rem;
 }
 .ParagraphCardRightMajur{
-
 background-color:#9767A9;
 width: 100%;
 height: 47vh; 
@@ -693,8 +671,7 @@ z-index: 1;
 text-align: left;
 color: white;
 }
-/* SEC Card 2*/
-/* PAR 1 cachos */
+
 .PhotoCardLeftCachos{
 
 background-image: url("img/Modelo-cachos.png");
@@ -718,7 +695,6 @@ flex-wrap: wrap;
 color: white;
 
 }
-/* PAR 2  rainha*/
 .PhotoCardRightRainha{
 background-image: url("img/Rainha-Afro.png");
 background-size: cover;
@@ -740,8 +716,7 @@ text-align: left;
 flex-wrap: wrap;
 color: white;
 }
-/* SEC Card 3*/
-/* PAR 1 mae e filha */
+
 .PhotoCardLeftFamilia{
 background-image: url("img/Mae-e-Filha.png");
 background-size: cover;
@@ -764,7 +739,6 @@ flex-wrap: wrap;
 color: white;
 
 }
-/* PAR 2  banho*/
 .PhotoCardRightBanho{
 background-image: url("img/Espuma-no-cabelo.png");
 background-size: cover;
@@ -776,7 +750,6 @@ margin-left: 1.3rem;
 z-index: 2;  
 }
 .ParagraphCardRightBanho{
-
 background-color:#9767A9;
 width: 100%;
 height: 43vh; 
@@ -787,10 +760,7 @@ text-align: left;
 flex-wrap: wrap;
 color: white;
 }
-/* SEC Card 4 apenas left*/
-/* PAR 1 */
 .PhotoCardLeftCabeloBranco{
-
 background-image: url("img/Modelo-cabelo-branco.png");
 background-size: cover;
 background-repeat: no-repeat;
@@ -813,7 +783,6 @@ color: white;
 
 }  
 .PhotoCardRightArquivoSvg{
-
 background-image: url("svg/Cachos-preto.svg");
 background-size: contain;
 background-repeat: no-repeat;
@@ -827,13 +796,11 @@ z-index: 2;
 /* -- -------------------- -- */
 /*Grade Galeria*/
 /* -- -------------------- -- */
-
 #GridGalery{
 display: none;
 }
 /* MOBILE GALERY */
 #MobileGridGalery{
-
 display: grid;
 grid-template-columns: 4fr 4fr 4fr 4fr;
 grid-template-rows: 30vw  50vw 50vw 50vw 30vw;
@@ -921,30 +888,10 @@ background-position: center;
 display: none;
 }
 footer{
-background-color: gray;
-}
-.MobileFooterNav{
-border:solid fuchsia;
-margin-right: 2rem;
-width: 30vh;
+background-color: white;
 }
 
-.MobileFooterUl{
-border:solid blue;
-display: flex;
-justify-content: space-evenly;
-align-items: center;
-width: 100%;
-}
-/* .MobileFooterLink:hover{
-background-color: rgba(255, 255, 255, 0.585);
 
-} */
-.FooterLinkList{
-list-style: none;
-margin-left: 0.2rem;
-
-}
 .MobileFooterLink{
 text-decoration: none;
 text-align: center;
@@ -955,15 +902,20 @@ align-items: center;
 
 }
 .MobileButtom{
-width: 0.8vw;
-text-align: center;
+    border:solid blue;
+
+background-color: #9767A9;
+margin-right: 1rem;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 12vw;
+height: 5vh;
+border-radius: 10vw;
 }
-.MobileButtomText{
-margin-left: 0.1rem;
-color: white;
-font-family: 'Montserrat', sans-serif;
-font-size: 0.6em;
-width: 3.7vw;
+
+svg{
+    width: 7vw;
 }
 }
 
