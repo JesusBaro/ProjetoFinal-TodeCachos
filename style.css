@@ -75,9 +75,13 @@ font-family: 'Montserrat', sans-serif;
 color: #AC95BB;
 font-family: 'Montserrat', sans-serif;
 }
+
 .LogoNavegation{
 width: 3vw;
 padding-left: 0.5rem;
+}
+a{
+text-decoration: none;
 }
 /*  LAYOUT IMAGEM*/
 #Tittle{
