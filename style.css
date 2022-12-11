@@ -39,7 +39,7 @@ text-decoration: none;
 
 margin-left: 1.4rem;
 font-size: 1em;
-color: #AC95BB;
+color: #9767A9;
 font-family: 'Montserrat', sans-serif;
 }
 .HeaderListItem:hover{
@@ -85,7 +85,6 @@ width: 100%;
 height: 70vh;
 background-image: url("img/cabeludo.png");
 background-size: cover;
-/* background-position: right ; */
 background-repeat: no-repeat;
 display: flex;
 justify-content: space-evenly;
@@ -366,7 +365,6 @@ grid-column-start: 1;
 grid-row-end: span 2;
 background-image: url("img/Rei-Afro.png");
 background-size:cover;
-/* background-position: ; */
 background-repeat: no-repeat;
 background-position: center;
 }
@@ -510,16 +508,15 @@ width: 3.7vw;
 @media (min-width:201px) and (max-width:500px) {
 header{
 width: 100%;
-height: 7vh;
+height: 5vh;
 display: flex;
-
+justify-content: space-between;
 align-items: center;
 z-index: 3;
 } 
 .LogoHeader{
-width: 20vw;
-margin-left: 0vw;
-justify-content: center;
+width: 15vw;
+margin-left: 2rem;
 
 }
 .HeaderNav{
@@ -539,12 +536,13 @@ display: none;
 }
 .DivMenuMobile{
 display: flex;
-justify-content: start;
+justify-content: flex-start;
+height: 100%;
 }
 .MenuMobile{
 display: flex;
 justify-content: start;
-width: 10vw;
+width: 100%;
 }
 
 #Tittle{
@@ -553,11 +551,14 @@ height: 60vh;
 background-image: url("img/cabeludoMobile.png");
 background-size: cover;
 background-repeat: no-repeat;
-flex-direction: column;
 display: flex;
+justify-content: space-evenly;
+align-items: center;
+flex-direction: column;
+
 }
 .divTittleOne{ 
-width: 50vw;
+width: 60vw;
 height: 15vh;
 position: absolute;
 top: 5rem;
@@ -571,8 +572,8 @@ font-size: 2.7em;
 width: 65vw;
 height: 10vh;
 position: absolute;
-top: 19rem;
-left: 2rem;
+top: 14rem;
+left: 2.5rem;
 }       
 #TittleParagraph{
 color: white;
@@ -597,7 +598,6 @@ text-align: left;
 }
 
 .LayoutParagraph{
-/* border: solid 3px rgb(10, 6, 225); */
 width: 90%;
 height: 40vh;
 font-size: 1rem;
