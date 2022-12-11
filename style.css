@@ -39,7 +39,7 @@ text-decoration: none;
 
 margin-left: 1.4rem;
 font-size: 1em;
-color: #9767A9;
+color: #AC95BB;
 font-family: 'Montserrat', sans-serif;
 }
 .HeaderListItem:hover{
@@ -462,7 +462,7 @@ display: flex;
 align-items: center;
 justify-content: flex-end;
 }
-.MobileFooterNav{
+.MobileButtom{
 display: none;
 }
 .FooterNav{
@@ -902,8 +902,6 @@ align-items: center;
 
 }
 .MobileButtom{
-    border:solid blue;
-
 background-color: #9767A9;
 margin-right: 1rem;
 display: flex;
