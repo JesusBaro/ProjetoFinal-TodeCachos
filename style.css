@@ -52,7 +52,7 @@ font-family: 'Montserrat', sans-serif;
 }
 .HeaderLink{
 text-decoration: none;
-
+color: #9767A9;
 }
 .HeaderDiv{
 justify-content: space-evenly;
@@ -96,16 +96,10 @@ align-items: center;
 .divTittleOne{ 
 width: 20vw;
 height: 20vh;
-position: relative;
-top: 2rem;
-right: 4.3rem;
 }
 .divTittleTwo{  
 width: 20vw;
 height: 15vh;
-position: relative;
-top: 3rem;
-left: 4vh;
 }
 #TittleH2{
 color: white;
